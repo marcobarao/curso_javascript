@@ -10,11 +10,17 @@
 
 <body>
     <div id="app">
-        <button onclick="exibeAlert()">Clique aqui</button>
+        <input type="text" name="nome">
+        <button class="botao">Enviar</button>
     </div>
     <script>
-        function exibeAlert() {
-            alert('Cliclou no botão!');
+        var inputElement = document.querySelector('input[name=nome]');
+        var buttonElement = document.querySelector('button.botao');
+
+        buttonElement.onclick = function () {
+            var text = inputElement.value;
+
+            alert(text);
         }
     </script>
 </body>
