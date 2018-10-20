@@ -11,28 +11,27 @@
 <body>
 
     <script>
-        function retornaSexo(sexo) {
-            
-            // if (sexo === 'M') {
-            //     return 'Masculino';
-            // } else if (sexo === 'F') {
-            //     return 'Feminino';
-            // } else {
-            //     return 'Outro';
-            // }
+        // AND = &&
+        // OR = ||
+        // NOT = !
 
-            switch (sexo) {
-                case 'M':
-                    return 'Masculino';
-                case 'F':
-                    return 'Feminino';
-                default:
-                    return 'Outro';
-            }
+        var idade = 18, votou = true, sexo = 'M';
+
+
+        if (idade >= 18 && votou === true) {
+            console.log('Apto a vaga');
         }
 
-        var resultado = retornaSexo('M');
-        console.log(resultado)
+        if (idade >= 18 || votou === true) {
+            console.log('Apto a vaga');
+        }
+
+        if (votou !== true) {
+            console.log('Qual foi o motivo, pelo qual você não votou?')
+        }
+
+        obrigacaoMilitar = sexo === 'M';
+        console.log(obrigacaoMilitar)
     </script>
 </body>
 
