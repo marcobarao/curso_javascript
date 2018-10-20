@@ -11,30 +11,16 @@
 <body>
 
     <script>
-        var x = 10, y = 5;
+        function soma(a, b) {
+            // Variável no escopo da função
+            var resultado = a + b;
 
-        var soma = x + y;
-        var subtracao = x - y;
-        var multiplicacao = x * y;
-        var divisao = x / y;
-        var modulo = x % y;
+            return resultado;
+        }
 
-        console.log(soma);
-        console.log(subtracao);
-        console.log(multiplicacao);
-        console.log(divisao);
-        console.log(modulo);
-
-        // x = x + 3;
-        x += 3;
-        console.log(x);
-        // x = x * 3;
-        x *= 3;
-        console.log(x);
-        // x = x + 1;
-        x++;
-        console.log(x)
-
+        // Variável no escopo global
+        var resultado = soma(1, 2);
+        console.log(resultado);
     </script>
 </body>
 
