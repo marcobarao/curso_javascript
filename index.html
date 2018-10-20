@@ -11,27 +11,8 @@
 <body>
 
     <script>
-        // AND = &&
-        // OR = ||
-        // NOT = !
-
-        var idade = 18, votou = true, sexo = 'M';
-
-
-        if (idade >= 18 && votou === true) {
-            console.log('Apto a vaga');
-        }
-
-        if (idade >= 18 || votou === true) {
-            console.log('Apto a vaga');
-        }
-
-        if (votou !== true) {
-            console.log('Qual foi o motivo, pelo qual você não votou?')
-        }
-
-        obrigacaoMilitar = sexo === 'M';
-        console.log(obrigacaoMilitar)
+        var resultado = (sexo === 'M') ? 'Masculino' : 'Feminino';
+        console.log(resultado);
     </script>
 </body>
 
