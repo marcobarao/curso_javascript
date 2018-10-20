@@ -11,16 +11,28 @@
 <body>
 
     <script>
-        function soma(a, b) {
-            // Variável no escopo da função
-            var resultado = a + b;
+        function retornaSexo(sexo) {
+            
+            // if (sexo === 'M') {
+            //     return 'Masculino';
+            // } else if (sexo === 'F') {
+            //     return 'Feminino';
+            // } else {
+            //     return 'Outro';
+            // }
 
-            return resultado;
+            switch (sexo) {
+                case 'M':
+                    return 'Masculino';
+                case 'F':
+                    return 'Feminino';
+                default:
+                    return 'Outro';
+            }
         }
 
-        // Variável no escopo global
-        var resultado = soma(1, 2);
-        console.log(resultado);
+        var resultado = retornaSexo('M');
+        console.log(resultado)
     </script>
 </body>
 
